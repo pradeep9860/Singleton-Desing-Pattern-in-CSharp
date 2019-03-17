@@ -20,6 +20,9 @@ namespace SingletonDesignPatternDemo
             //FromConfig1();  
             //FromConfig2();
 
+            //set log to file
+            var _logger = Logger.Instance; 
+            _logger.Log("log to file"); 
             Console.ReadKey();
         }
 
