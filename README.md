@@ -13,7 +13,7 @@ Concurrent access to the resource is well managed by singleton design pattern.
 
 As part of the Implementation guidelines we need to ensure that only one instance of the class exists by declaring all constructors of the class to be private.  Also, to control the singleton access we need to provide a static property that returns a single instance of the object.
 
-## Implementation of Singletone Class 
+## Implementation of Singleton Class 
 
 ### Singletone Class
     public sealed class ApplicationConfig
