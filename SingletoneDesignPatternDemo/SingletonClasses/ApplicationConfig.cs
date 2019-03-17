@@ -4,6 +4,9 @@ using System.Text;
 
 namespace SingletonDesignPatternDemo.SingletonClasses
 {
+    /*
+    *  Sealed restricts the inheritance
+    */
     public sealed class ApplicationConfig
     { 
         /*
