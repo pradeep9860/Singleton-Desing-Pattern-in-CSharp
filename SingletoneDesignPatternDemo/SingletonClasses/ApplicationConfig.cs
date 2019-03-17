@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SingletoneDesignPatternDemo.SingletoneClasses
+namespace SingletonDesignPatternDemo.SingletonClasses
 {
     public sealed class ApplicationConfig
     { 

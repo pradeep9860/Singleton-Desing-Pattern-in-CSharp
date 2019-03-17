@@ -1,7 +1,7 @@
-﻿using SingletoneDesignPatternDemo.SingletoneClasses;
+﻿using SingletonDesignPatternDemo.SingletonClasses;
 using System;
 
-namespace SingletoneDesignPatternDemo
+namespace SingletonDesignPatternDemo
 {
     class Program
     {
