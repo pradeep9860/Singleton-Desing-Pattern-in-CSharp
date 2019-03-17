@@ -1,4 +1,4 @@
-# Singletone Desing Pattern in C#
+# Singleton Desing Pattern in C#
 
 Singleton Pattern belongs to Creational type pattern. Gang of four(GOF) have defined five design patterns that belongs to creational design type category. Singleton is one among them and the rest are Factory, Abstract Factory, Builder and Prototype patterns. As the name implies, creational design type deals with object creation mechanisms. Basically, to simplify this, creational pattern explain us the creation of objects in a manner suitable to a given situation. 
 
@@ -13,7 +13,7 @@ Concurrent access to the resource is well managed by singleton design pattern.
 
 As part of the Implementation guidelines we need to ensure that only one instance of the class exists by declaring all constructors of the class to be private.  Also, to control the singleton access we need to provide a static property that returns a single instance of the object.
 
-## Implementation of Singletone Class 
+## Implementation of Singleton Class 
 
 ### Singletone Class
     public sealed class ApplicationConfig
