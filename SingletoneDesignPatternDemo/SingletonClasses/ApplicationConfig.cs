@@ -17,6 +17,10 @@ namespace SingletonDesignPatternDemo.SingletonClasses
         */
         private static readonly Lazy<ApplicationConfig> instance = new Lazy<ApplicationConfig>(()=> new ApplicationConfig());
 
+
+        //adding counter variable to see how many times initialize our singleton class
+        private int count = 0;
+
         /*
        * public property is used to return only one instance of the class
        * leveraging on the private property
@@ -38,7 +42,9 @@ namespace SingletonDesignPatternDemo.SingletonClasses
         */
         private ApplicationConfig()
         {
-            ConfigValue = 1; 
+            ConfigValue = 1;
+            count++;
+            Console.WriteLine($"ApplicationConfig object is instanciate {count} times.");
         }
          
         private int ConfigValue { get; set; }
