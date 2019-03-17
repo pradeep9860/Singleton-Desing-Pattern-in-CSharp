@@ -22,7 +22,11 @@ namespace SingletonDesignPatternDemo
 
             //set log to file
             var _logger = Logger.Instance; 
-            _logger.Log("log to file"); 
+            //for exception
+            _logger.Log("log to file");
+
+            //for success
+            _logger.Log("yes! we did it.", Enums.LogType.Success);
             Console.ReadKey();
         }
 
