@@ -42,7 +42,7 @@ namespace SingletonDesignPatternDemo.SingletonClasses
         public void Log(string message)
         {
             // Create a writer and open the file:
-
+            //set your logger path to config
             var logFileWithPath = "C:\\logs\\"  + "log-" + DateTime.Now.Date.ToString("yyyy-MM-dd") + ".txt";
 
             var log = !File.Exists(logFileWithPath) ? new StreamWriter(logFileWithPath) : File.AppendText(logFileWithPath);
