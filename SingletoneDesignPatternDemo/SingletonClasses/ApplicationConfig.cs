@@ -9,12 +9,13 @@ namespace SingletonDesignPatternDemo.SingletonClasses
     */
     public sealed class ApplicationConfig
     { 
+        //Lazy initialization
         /*
         * Private property initilized with null
         * ensures that only one instance of the object is created
         * based on the null condition
         */
-        private static ApplicationConfig instance = null;
+        private static readonly Lazy<ApplicationConfig> instance = new Lazy<ApplicationConfig>(()=> new ApplicationConfig());
 
         /*
        * public property is used to return only one instance of the class
@@ -24,9 +25,10 @@ namespace SingletonDesignPatternDemo.SingletonClasses
         {
             get
             {
-                if (instance == null)
-                    instance = new ApplicationConfig();
-                return instance;
+                //Eager initialization for thread safety
+                //if (instance == null)
+                //    instance = new ApplicationConfig();
+                return instance.Value;
             }
         }
 
