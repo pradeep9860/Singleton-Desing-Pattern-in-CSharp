@@ -44,7 +44,7 @@ namespace SingletonDesignPatternDemo.SingletonClasses
         {
             ConfigValue = 1;
             count++;
-            Console.WriteLine($"ApplicationConfig object is instanciate {count} times.");
+            Console.WriteLine($"ApplicationConfig object is instantiated {count} times.");
         }
          
         private int ConfigValue { get; set; }
